@@ -12,6 +12,12 @@ exp03에서는 그런 카메라 스티커기능을 구현한다. 사진에서 �
 이는 HOG방식으로 이미 학습되어있든 face_landmarks 모델을 가져와 사용했다.  
 ![face_feature](https://github.com/estela19/AIFFEL/blob/master/exp03/face_feature.JPG)
 
+## Calculate Sticker Area
+코를 중심으로 스티커를 붙이기 때문에, 코의 좌표를 구한다음(landmark의 30번째)  
+스티커의 크기의 절반만큼 좌상단으로 이동해 스티커를 그릴 좌 상단 좌표를 구한다.  
+해당좌표부터 스티커의 크기만큼이 스티커를 붙일 영역이 된다.  
+![picture](https://github.com/estela19/AIFFEL/blob/master/exp03/picture.jpg)
+
 
 ## How to use face_landmarks
 first, download pre trained model
