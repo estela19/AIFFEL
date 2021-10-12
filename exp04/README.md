@@ -1,7 +1,7 @@
 # NLG (Natural Language Generation)  
 첫 단어가 주어졌을 때 완결된 문장을 생성하는 자연어 생성 모델을 만들었다.  
   
-# NLP/NLG Task Pipeline  
+# NLP Task Pipeline  
 ## 1. Preproccesing Pipeline  
 ## 1-1. Preproccesing Sentence  
 * 특수문자 및 구두점 제거
@@ -38,9 +38,9 @@ window : 2
         ...
 ```  
 
-### Auto encoder  
-인코딩과 디코딩 하는 과정을 딥러닝으로 처리하는 auto encoding도 존재한다.  
-input을 차원축소하는 encoder를 지나 다시 decoder를 통과시켜 처음 input과 비교하는 방식으로 학습한다.  
+### thesaurus 
+단어가 가지는 의미와 계층구조를 분석하고 분류한 어휘 분류사전을 thesaurus(시소러스)라고 한다.  
+thesaurusd의 대표적인 예로는 wordnet이 있다.  
 
 ## 1-3. Embedding  
 encodding된 word vector들은 단지 숫자로 mapping 되어있을 뿐이다.  
@@ -72,3 +72,7 @@ Tokenizer와 반대로 숫자 token을 읽어 자연어로 치환해주는 과�
 |:-----:|:---------:|:-----------:|:--------------:|:----:|
 | LSTM  |     x     | 1024        | 256            | 2.21 |
 | LSTM  | Word2Vec  | 1024        | 256            | **2.18** |
+
+## Reference
+https://glee1228.tistory.com/3  
+https://jalammar.github.io/visualizing-neural-machine-translation-mechanics-of-seq2seq-models-with-attention/
