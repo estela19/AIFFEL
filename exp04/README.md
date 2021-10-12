@@ -67,7 +67,7 @@ Tokenizer와 반대로 숫자 token을 읽어 자연어로 치환해주는 과�
   
 # What I do for NLG
 1. [LSTM](https://github.com/estela19/AIFFEL/blob/master/exp04/%5BE-04%5Dlyricist_base.ipynb) 
-2. [LSTM with Word2Vec](https://github.com/estela19/AIFFEL/blob/master/exp04/%5BE-04%5Dlyricist_base.ipynb) 
+2. [LSTM with Word2Vec](https://github.com/estela19/AIFFEL/blob/master/exp04/%5BE-04%5Dlyricist_word2vec.ipynb) 
 
 | model | embedding | hidden size | embedding size | loss |
 |:-----:|:---------:|:-----------:|:--------------:|:----:|
