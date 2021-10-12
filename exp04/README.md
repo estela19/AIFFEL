@@ -53,10 +53,13 @@ Word2Vec, GloVe, FastText 등이 있다
 ### RNN  
 가장 초기 모델로 이전 layer의 state를 다음 layer의 input으로 준다.  
 하지만 문장이 길어질 수록 앞 전의 state가 소실되는 문제점이 생긴다.  
+![rnn](https://github.com/estela19/AIFFEL/blob/master/exp04/utils/rnn.JPG)
 
 ### LSTM  
 RNN의 단점을 해결하고자 핵심정보를 다음 step에 잘 전달하고자 했다.  
 4개의 가중치를 가지고 연산하는 4개의 레이어를 가지고 있다.  
+![lstm](https://github.com/estela19/AIFFEL/blob/master/exp04/utils/lstm.JPG)
 
 ## 3. Detokenize
 Tokenizer와 반대로 숫자 token을 읽어 자연어로 치환해주는 과정이다.  
+[Tokenize & Detokenize](https://github.com/estela19/AIFFEL/blob/master/exp04/utils/detokenize.JPG)
