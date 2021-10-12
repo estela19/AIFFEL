@@ -62,7 +62,6 @@ RNN의 단점을 해결하고자 핵심정보를 다음 step에 잘 전달하고
 
 ## 3. Detokenize
 Tokenizer와 반대로 숫자 token을 읽어 자연어로 치환해주는 과정이다.  
-![Tokenize & Detokenize](https://github.com/estela19/AIFFEL/blob/master/exp04/utils/detokenize.JPG)
   
   
 # What I do for NLG
