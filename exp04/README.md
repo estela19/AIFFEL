@@ -61,7 +61,10 @@ RNN의 단점을 해결하고자 핵심정보를 다음 step에 잘 전달하고
 
 ## 3. Detokenize
 Tokenizer와 반대로 숫자 token을 읽어 자연어로 치환해주는 과정이다.  
+<<<<<<< HEAD
 
+=======
+>>>>>>> 52c2b322803565ace3695a226684742b00136cd9
   
   
 # What I do for NLG
@@ -75,4 +78,8 @@ Tokenizer와 반대로 숫자 token을 읽어 자연어로 치환해주는 과�
 
 ## Reference
 https://glee1228.tistory.com/3  
+<<<<<<< HEAD
 https://jalammar.github.io/visualizing-neural-machine-translation-mechanics-of-seq2seq-models-with-attention/
+=======
+https://jalammar.github.io/visualizing-neural-machine-translation-mechanics-of-seq2seq-models-with-attention/
+>>>>>>> 52c2b322803565ace3695a226684742b00136cd9
