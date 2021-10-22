@@ -16,9 +16,9 @@ class Trainer():
         x_data, self.test_x, y_data, self.test_y = train_test_split(src_data, tgt_data, test_size=test_size)
         self.train_x, self.val_x, self.train_y, self.val_y = train_test_split(x_data, y_data, test_size=val_size)
 
-    def train(self, epochs = 100):
+    def train(self, epochs=100, batch_size=512):
         self.model.compile(loss=self.loss, optimizer=self.optimizer)
-        self.hist = self.model.fit(self.train_x, self.train_y, epochs=epochs, validation_data=(self.val_x, self.val_y))
+        self.hist = self.model.fit(self.train_x, self.train_y, epochs=epochs, bach_size=batch_size, validation_data=(self.val_x, self.val_y))
 
     def test(self):
         test_loss, test_acc = self.model.evaluate(self.test_x, self.test_y)
