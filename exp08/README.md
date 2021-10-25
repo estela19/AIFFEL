@@ -32,8 +32,22 @@ detection 단계에서 대상을 다르게 함으로써 사람을 outfocus하는
 검출한 대상을 원본 이미지에 segmentation하는 것이 아니라 다른 배경에 segmentation함으로써 chroma key (배경합성)을 할 수 있다.  
 
 ## Problem of DeepLabModel  
-~ 방식을 취하기 때문에 사람이 완벽하게 detection 되지 않는 문제점이 있다. 예를 들면 손가락의 일부분 또는 경계가 깔끔하지 않게 잘리는 문제가 생긴다.  
-(사진)  
+DeepLabModel에서는 객체의 경계를 완벽하게 detection 되지 않는 문제점이 있다. 예를 들면 손가락의 일부분 또는 경계가 깔끔하지 않게 잘리는 문제가 생긴다.  
+![problem](utils/problem.jpg)
   
-## Solution  
+# Improvement about DeepLabModel  
+## Watershed Algorithm  
+이미지를 grayscale로 변환했을 때, pixel의 값을 통해서 이미지의 높고 낮음을 구별할 수 있다. (pixel 값이 급격하게 변하는 구간이 경계점임을 알 수 있다.)  이렇게 특정 지점부터 근처 픽셀값까지 확장하다 보면 두 경계가 만나는 부분이 생기게 되는데, 이 지점을 경계로 이미지 분할을 하게 된다.  
+이렇게 분할을 하게 되면 대상의 가장자리 부분이 잘려서 인식되는 것을 방지할 수 있다.  
 
+```python
+import cv2
+
+cv2.watershed(img, markers)
+```
+형태로 사용할 수 있다.  
+
+![watershed](utils/watershed.jpg)
+
+# Reference  
+https://softwareeng.tistory.com/143
