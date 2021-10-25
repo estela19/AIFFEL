@@ -1,7 +1,7 @@
 # Human Segmentation  
 human segmentation 기술을 활용하여 인물에만 초점이 맞고 배경은 outfocus된 인물사진을 만들어보자  
 
-[👉👈Go To Code👈👈](https://github.com/estela19/AIFFEL/blob/master/exp08/picture.ipynb)
+[👉👉Go To Code👈👈](https://github.com/estela19/AIFFEL/blob/master/exp08/picture.ipynb)
 
 # Shallow focus workflow  
 ### 1. Human Detection  
