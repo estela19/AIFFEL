@@ -8,7 +8,7 @@
 
 ### 2. Face Embedding  
 face_recoginition 모듈에서 제공하는 face_encodings 함수로 해당 얼굴의 임베딩 벡터를 구한다. 
-```angular2html
+```python
 import face_recognition
 
 face_recoginition.face_encodings(image)
@@ -17,7 +17,7 @@ face_recoginition.face_encodings(image)
 ### 3. Calculate Distance
 각각의 얼굴 임베딩 벡터사이의 거리를 구해 유사도를 측정한다.  
 본 프로젝트에서는 `get_distance` 함수로 구현되어 있으며 세부 구현체는 다음과 같다.  
-```angular2html
+```python
 def get_distance(name1, name2):
     return np.linalg.norm(embedding_dict[name1]-embedding_dict[name2], ord=1)
 ```
