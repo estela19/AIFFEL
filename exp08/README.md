@@ -33,7 +33,7 @@ detection 단계에서 대상을 다르게 함으로써 사람을 outfocus하는
 
 ## Problem of DeepLabModel  
 DeepLabModel에서는 객체의 경계를 완벽하게 detection 되지 않는 문제점이 있다. 예를 들면 손가락의 일부분 또는 경계가 깔끔하지 않게 잘리는 문제가 생긴다.  
-![problem](utils/problem.jpg)
+![problem](https://github.com/estela19/AIFFEL/blob/master/exp08/utils/problem.JPG)
   
 # Improvement about DeepLabModel  
 ## Watershed Algorithm  
@@ -47,12 +47,12 @@ cv2.watershed(img, markers)
 ```
 형태로 사용할 수 있다.  
 
-![watershed](utils/watershed.jpg)
+![watershed](https://github.com/estela19/AIFFEL/blob/master/exp08/utils/watershed.JPG)
 
 ## Stereo Depth
 같은 이미지를 왼쪽과 오른쪽 각각에서 촬영한 스테레오 이미지를 활용하여 깊이를 얻어 낼 수 있다. 이는 우리 눈에서 대상과의 거리와 원근감을 느끼게 되는 원리와 동일하다. 이미지의 깊이를 얻어 낼 수 있으므로 1차원 이미지에서 경계를 분리해 내는 것이 아닌 깊이를 기준으로 경계를 분리하여 보다 `정확하게 대상을 인식`할 수 있다.  
   
-![streo](utils/stereo.jpg) 
+![streo](https://github.com/estela19/AIFFEL/blob/master/exp08/utils/stereo.JPG)
 
  `cv2` 모듈을 이용해 쉽게 stereo map을 가져올 수 있다.
 ```python
@@ -63,7 +63,7 @@ cvw.StereoBM_create()
 위와 같은 형태로 사용한다.  
 
 동일한 두 이미지에서 구해낸 stereomap의 예시이다.
-![stereomap](utils/stereomap.jpg)
+![stereomap](https://github.com/estela19/AIFFEL/blob/master/exp08/utils/stereomap.JPG)
 
 # Reference  
 https://softwareeng.tistory.com/143  
