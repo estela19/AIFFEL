@@ -62,8 +62,8 @@ cvw.StereoBM_create()
 ```
 위와 같은 형태로 사용한다.  
 
-동일한 두 이미지에서 구해낸 stereomap의 예시이다.
-![stereomap](https://github.com/estela19/AIFFEL/blob/master/exp08/utils/stereomap.JPG)
+동일한 두 이미지에서 구해낸 stereomap의 예시이다.    
+![stereomap](https://github.com/estela19/AIFFEL/blob/master/exp08/utils/stereomap.JPG)  
 
 # Reference  
 https://softwareeng.tistory.com/143  
