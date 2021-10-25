@@ -38,7 +38,7 @@ DeepLabModel에서는 객체의 경계를 완벽하게 detection 되지 않는 �
 # Improvement about DeepLabModel  
 ## Watershed Algorithm  
 이미지를 grayscale로 변환했을 때, pixel의 값을 통해서 이미지의 높고 낮음을 구별할 수 있다. (pixel 값이 급격하게 변하는 구간이 경계점임을 알 수 있다.)  이렇게 특정 지점부터 근처 픽셀값까지 확장하다 보면 두 경계가 만나는 부분이 생기게 되는데, 이 지점을 경계로 이미지 분할을 하게 된다.  
-이렇게 분할을 하게 되면 대상의 가장자리 부분이 잘려서 인식되는 것을 방지할 수 있다.  
+이렇게 분할을 하게 되면 `대상의 가장자리 부분이 잘려서 인식되는 것을 방지`할 수 있다.  
 
 ```python
 import cv2
@@ -49,5 +49,22 @@ cv2.watershed(img, markers)
 
 ![watershed](utils/watershed.jpg)
 
+## Stereo Depth
+같은 이미지를 왼쪽과 오른쪽 각각에서 촬영한 스테레오 이미지를 활용하여 깊이를 얻어 낼 수 있다. 이는 우리 눈에서 대상과의 거리와 원근감을 느끼게 되는 원리와 동일하다. 이미지의 깊이를 얻어 낼 수 있으므로 1차원 이미지에서 경계를 분리해 내는 것이 아닌 깊이를 기준으로 경계를 분리하여 보다 `정확하게 대상을 인식`할 수 있다.  
+  
+![streo](utils/stereo.jpg) 
+
+ `cv2` 모듈을 이용해 쉽게 stereo map을 가져올 수 있다.
+```python
+import cv2  
+
+cvw.StereoBM_create()
+```
+위와 같은 형태로 사용한다.  
+
+동일한 두 이미지에서 구해낸 stereomap의 예시이다.
+![stereomap](utils/stereomap.jpg)
+
 # Reference  
-https://softwareeng.tistory.com/143
+https://softwareeng.tistory.com/143  
+http://www.gisdeveloper.co.kr/?p=6955
