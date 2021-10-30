@@ -1,5 +1,6 @@
 # Sentiment Classification  
 네이버 영화 리뷰 데이터셋을 이용해 영화 리뷰를 보고 긍정적인 리뷰인지, 부정적인 리뷰인지 Binary Classification하는 모델을 만들어 보자!  
+
 [👉👉Go To Code👈👈](https://github.com/estela19/AIFFEL/blob/master/exp07/models.ipynb)  
 
 # Workflow  
@@ -175,7 +176,9 @@ SelfAttention.add(keras.layers.Dense(1, activation='sigmoid'))
 
 # Appendix  - Pororo
 카카오브레인에서 Bert, Transformer등을 이용해 만든 자연어처리 라이브러리 [pororo](github.com/kakaobrain/pororo)를 이용하여 테스트해 보았다.  
+
 [👉👉Go To Code👈👈](https://github.com/estela19/AIFFEL/blob/master/exp07/pororo.ipynb)  
+
 pororo 라이브러리의 사용방법은 다음과 같다.  
 ```
 pip install pororo
