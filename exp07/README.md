@@ -1,6 +1,6 @@
 # Sentiment Classification  
 네이버 영화 리뷰 데이터셋을 이용해 영화 리뷰를 보고 긍정적인 리뷰인지, 부정적인 리뷰인지 Binary Classification하는 모델을 만들어 보자!  
-
+[👉👉Go To Code👈👈](https://github.com/estela19/AIFFEL/blob/master/exp07/models.ipynb)  
 
 # Workflow  
 ### 1. DataLoader 
@@ -15,7 +15,7 @@
 본 모델에서 사용한 embedding은 keras embedding layer와 word2vec이다.  
 
 ## keras embedding layer  
-원 핫 임베딩  
+kearas에서 제공하는 embedding layer로 기본적으로 one-hot embedding을 이용한다.  
 
 ## word2vec 
 cbow와 skip gram 형식으로 학습한 인베딩으로 오토인코더와 비슷한 성격을 가졌다.  
@@ -174,7 +174,8 @@ SelfAttention.add(keras.layers.Dense(1, activation='sigmoid'))
 | Self Attention        | 256          | 200             | 0.8193   | 
 
 # Appendix  - Pororo
-카카오브레인에서 Bert, Transformer등을 이용해 만든 자연어처리 라이브러리 [pororo](github.com/kakaobrain/pororo)를 이용하여 테스트해 보았다.   
+카카오브레인에서 Bert, Transformer등을 이용해 만든 자연어처리 라이브러리 [pororo](github.com/kakaobrain/pororo)를 이용하여 테스트해 보았다.  
+[👉👉Go To Code👈👈](https://github.com/estela19/AIFFEL/blob/master/exp07/pororo.ipynb)  
 pororo 라이브러리의 사용방법은 다음과 같다.  
 ```
 pip install pororo
