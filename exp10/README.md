@@ -120,5 +120,5 @@ Attention을 사용할 경우 기존 방식보다 훨씬 더 많은 데이터를
 3. 해당 score를 value에 concate 해준다.  
 
 # Reference  
-![seq2seq](https://blog.naver.com/sooftware/221784419691)
-![밑바닥부터 이해하는 어텐션 매커니즘](https://glee1228.tistory.com/3)
+[seq2seq](https://blog.naver.com/sooftware/221784419691)  
+[밑바닥부터 이해하는 어텐션 매커니즘](https://glee1228.tistory.com/3)  
