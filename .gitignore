@@ -1,3 +1,7 @@
 .idea/
 exp04/practice.*
 .vscode/
+*/__pycache__/*
+
+exp10/news_summary*
+exp10/attention.py
