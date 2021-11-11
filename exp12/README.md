@@ -1,6 +1,8 @@
 # Session based Recomendation  
 user id와 movie id, Time (영화를 본 시점)이 주어질 때 어떤 유저가 다음에 볼 영화를 예측해보자  
 
+[😎Go To Code😎](https://github.com/estela19/AIFFEL/blob/master/exp12/baseline.ipynb)
+
 # Model
 # GRU4REC  
 ## Layer  
