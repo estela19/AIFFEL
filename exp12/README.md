@@ -16,13 +16,13 @@ Session이 끝날 때까지 기다리지 않고 병렬적으로 계산
 긴 세션과 짧은 세션이 섞여 있다.  
 이 세션들을 하나의 샘플로 mini-batch를 구성하면 제일 긴 세션의 연산이 끝날 때가지 짧은 세션들이 기다려야 해 자원이 낭비된다. 
 
-![session](https://github.com/estela19/AIFFEL/tree/master/exp12/utility/session.png)
+![session](https://github.com/estela19/AIFFEL/blob/master/exp12/utility/session.png)
 
 위 그림에서 세선 1, 2, 3, 을 하나의 미니배치로 만든다면 세션 3이 끝날때 까지 기다린다. 
 이렇게 구성할 경우 미니배치의 shape은 (3,1,1)이고 RNN cell state가 1개로만 이루어진다.  
 또한 tensorflow기준으로 rnn의 stateful=True 옵션을 사용하고 세션이 끝나면 state를 0으로 만들어준다. 
 
-![ssesion-parallel](https://github.com/estela19/AIFFEL/tree/master/exp12/utility/session-parallel.png)
+![ssesion-parallel](https://github.com/estela19/AIFFEL/blob/master/exp12/utility/session-parallel.png)
 
 ### Salpling on the eoutput
 Negative Sampling과 같은 개념.
