@@ -6,3 +6,7 @@ exp04/practice.*
 exp10/news_summary*
 exp10/attention.py
 exp12/data
+
+exp13/generated_samples
+exp13/training_checkpoints
+exp13/training_history
