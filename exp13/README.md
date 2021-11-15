@@ -1,6 +1,6 @@
 # Image Generation  
-이미지생성 모델을 이용하여 CIFAR-10 이미지를 생성해보자
-[✨Go To code✨]()
+이미지생성 모델을 이용하여 CIFAR-10 이미지를 생성해보자  
+[✨Go To Code✨](https://github.com/estela19/AIFFEL/blob/master/exp13/baseline.ipynb)
 
 # GAN 
 ## Generator  
@@ -34,10 +34,10 @@ def discriminator_loss(real_output, fake_output):
 real output과 fake output을 accuracy 1.0에 가깝게 정확하게 판단해 낸다면 생성자가 만드는 fake output과 real output이 차이가 많이 나서 판별자가 쉽게 판별해 낸다는 뜻이다. 따라서 real accuracy와 fake accuracy는 초반에 1.0에 가깝게 나오다가 서서히 낮아져 둘다 0.5에 가까워지는 것이 이상적이다. 
 
 # Result
-checkpoint를 통해서 이전 학습을 불러와 학습시켰다. 총 1523epoch를 학습시켰다.
-![history]()  
+checkpoint를 통해서 이전 학습을 불러와 학습시켰다. 총 1523epoch를 학습시켰다.  
+![history](https://github.com/estela19/AIFFEL/blob/master/exp13/utils/train_history_1523.png)  
 
-![Image]()
+![Image](https://github.com/estela19/AIFFEL/blob/master/exp13/fashion_mnist_dcgan.gif)
 
 # Reference  
 [모델저장 및 복원](https://www.tensorflow.org/tutorials/keras/save_and_load)
