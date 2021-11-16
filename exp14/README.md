@@ -147,12 +147,12 @@ from statsmodels.graphics.tsaplots import plot_acf, plot_pacf
 plot_pacf(ts_log)  # PACF : Partial Autocorrelation 그래프 그리기
 ```
 
-*cf. 본 프로젝트에서의 p, q, d*
+*cf. 본 프로젝트에서의 p, q, d
 PACF 그래프에서 p >= 2 에서 PACF가 0에 가깝기 때문에 p = 1  
 (PACF가 0이라는 의미는 현재 데이터와 p시점 떨어진 이전의 데이터는 상관도가 0으로 고려할 필요 X)  
 ACF는 점차적으로 감소하여 AR(1)과 유사하고 q에 대해 적합한 값이 없음    
 MA를 고려할 필요가 없으므로 q=0  
-1차 차분의 p-value값이 낮으므로 d=1    
+1차 차분의 p-value값이 낮으므로 d=1*    
 
 
 # Reference
