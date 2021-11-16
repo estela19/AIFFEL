@@ -156,7 +156,7 @@ MA를 고려할 필요가 없으므로 q=0
 
 
 # Reference
-[유의확률](https://ko.wikipedia.org/wiki/%EC%9C%A0%EC%9D%98_%ED%99%95%EB%A5%A0)
-[P-value](https://m.blog.naver.com/baedical/10109291879)
-[Unit Root Test로 ADF Test 알아보기](https://www.machinelearningplus.com/time-series/augmented-dickey-fuller-test/)
-[자기상관함수 및 편자기상관함수](http://kanggc.iptime.org/em/chap9/chap9.pdf)
+[유의확률](https://ko.wikipedia.org/wiki/%EC%9C%A0%EC%9D%98_%ED%99%95%EB%A5%A0)  
+[P-value](https://m.blog.naver.com/baedical/10109291879)  
+[Unit Root Test로 ADF Test 알아보기](https://www.machinelearningplus.com/time-series/augmented-dickey-fuller-test/)  
+[자기상관함수 및 편자기상관함수](http://kanggc.iptime.org/em/chap9/chap9.pdf)  
