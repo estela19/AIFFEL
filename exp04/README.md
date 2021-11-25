@@ -74,6 +74,6 @@ Tokenizer와 반대로 숫자 token을 읽어 자연어로 치환해주는 과�
 | LSTM  | Word2Vec  | 1024        | 256            | **2.18** |
 
 ## Reference
-https://glee1228.tistory.com/3
-https://jalammar.github.io/visualizing-neural-machine-translation-mechanics-of-seq2seq-models-with-attention/
+https://glee1228.tistory.com/3  
+https://jalammar.github.io/visualizing-neural-machine-translation-mechanics-of-seq2seq-models-with-attention/  
 
