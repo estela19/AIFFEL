@@ -33,16 +33,16 @@ cGAN이 fully-connected 레이어를 연속적으로 쌓아 만드는 것에 비
 ### Encoder-Decoder generator
 이미지를 입력받아 크기가 같은 변환된 이미지를 출력하기 위해 Encoder-Decoder 구조를 사용.
 인코더의 최종 출력은 그림 중간에 위치한 가장 작은 사각형으로 `bottleneck`이라고 불리며 입력 이미지의 중요한 특징만을 담고있다.  
-[generator]()
+![generator](https://github.com/estela19/AIFFEL/blob/master/exp19/utils/generator.png)
 
 ### U-Net generator
 각 레이어마다 encoder와 decoder가 skipconnection으로 연결됨
 decoder가 변환된 이미지를 더 잘 생성하도록 encoder로부터 더 많은 추가 정보를 이용하는 방법  
-[U-Net generator]()
+![U-Net generator](https://github.com/estela19/AIFFEL/blob/master/exp19/utils/U-Net.png)
 
 
 #### Encoder-Decoder generator와 U-Net Generator 비교
-[result]()
+![result](https://github.com/estela19/AIFFEL/blob/master/exp19/utils/result.png)
 
 ## Pix2Pix Discriminator
 DCGAN의 discriminator는 이미지 하나를 입력받아 convolution레이어를 이용해 크기를 줄여나가 하나의 이미지에 대해 하나의 확률값을 출력.  
@@ -50,12 +50,12 @@ DCGAN의 discriminator는 이미지 하나를 입력받아 convolution레이어�
 ### PatchGAN
 pix2pix는 입력이미지의 일부, receptive filed영역에 대해서 진짜/가짜를 판별하는 확률값을 도출한다. 이러한 방식으로 서로 다른 영역에 대해 여러개의 확률값을 계산하여 이 값을 평균하여 최종 출력  
 일반적으로 이미지에서 거리가 먼 두 픽셀은 서로 연관성이 거의 없기 때문에 일부 영역에서 세부적으로 진짜/가짜를 판별하는 것이 사실적인 이미지를 만드는데 도움이 된다.  
-[PatchGAN]()
+![PatchGAN](https://github.com/estela19/AIFFEL/blob/master/exp19/utils/patchGAN.png)
 
 ## Pix2Pix Loss
 L1 loss나 L2 loss만 이용할 경우 Generator가 이미지의 평균적인 손실만 줄이고자하여 결과 이미지가 흐릿해지는 경향이 있다.  
 L1 loss와 GAN loss를 같이 사용하면 더욱 좋은 결과를 얻을 수 있다. (discriminator를 잘 속여야 하기 때문)  
-[loss]()
+![loss](https://github.com/estela19/AIFFEL/blob/master/exp19/utils/loss.png)
 
 # Reference
 [Image-to-Image Translation with Conditional Adversarial Networks](https://arxiv.org/pdf/1611.07004.pdf)  
