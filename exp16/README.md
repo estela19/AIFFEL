@@ -1,7 +1,10 @@
 # Super Resolution  
 bicubic interpolation과 srgan을 활용하여 저해상도 이미지를 고해상도로 변경해보자  
 
-[Go To Code]()
+[Go To Code](https://github.com/estela19/AIFFEL/blob/master/exp16/baselilne.ipynb)
+
+### Preview
+![result](https://github.com/estela19/AIFFEL/blob/master/exp16/utils/result.jpg)
 
 **super resolution**이란 저해상도 이미지를 고해상도로 변환하는 작업을 말한다.  
 super resolution에는 두가지 어려움이 잇는데, 
@@ -24,7 +27,7 @@ bicubic_image = cv2.resize(
 저해상도 이미지를 bicubic interpolation하여 원하는 크기로 늘린 후 입력한다.
 3개의 conv layer를 거쳐 고해상도 이미지를 생성하고, 실제 고해상도 이미지와의 차이를 역전파하여 가중치를 학습한다.  
 
-![SRCNN]()
+![SRCNN](https://github.com/estela19/AIFFEL/blob/master/exp16/utils/SRCNN.jpg)
 
 SRCNN은 다음 3가지 연산을 수행한다. 
 * Patch extraction and representation : 저해상도 이미지에서 patch 추출  
@@ -35,7 +38,7 @@ SRCNN 이후 제안된 구조들은 다음과 같다.
 
 ### VDSR (Very Deep Super Resolution)
 
-![VDSR]()
+![VDSR](https://github.com/estela19/AIFFEL/blob/master/exp16/utils/VDSR.jpg)
 
 * SRCNN과 동일하게 interpolation을 통해 저해상도 이미지의 크기를 늘려 입력  
 * 20개의 convolutional layer 사용
@@ -43,32 +46,33 @@ SRCNN 이후 제안된 구조들은 다음과 같다.
 
 ### RDN (Residual Dense Network)
 
-![RDN]()
+![RDN](https://github.com/estela19/AIFFEL/blob/master/exp16/utils/RDN.jpg)
 
 * 저해상도 이미지가 입력되면 거치는 convolution layer의 출력을 최대한 활용
 
 ### RCAN (Residual Channel Attention Networks)
 
-![RCAN]()
+![RCAN](https://github.com/estela19/AIFFEL/blob/master/exp16/utils/RCAN.jpg)
 
 * convolution layer의 결과인 feature map에서 채널 간 모든 정보가 균일한 중요도를 갖는 것이 아닌 일부 중요한 채널에만 선택적으로 집중하도록 유도 (Attention)
 
 ## SRGAN (Super Resolution GAN)
 
-![SRGAN]()
+![SRGAN](https://github.com/estela19/AIFFEL/blob/master/exp16/utils/SRGAN.jpg)
 
 Generator가 저해상도 이미지를 입력받아 고해상도 이미지를 생성하면,  Discriminator는 생성된 이미지와 실제 이미지 중 진짜를 판별한다. 
 
 ### SRGAN Loss
-![SRGAN Loss]()
+![SRGAN Loss](https://github.com/estela19/AIFFEL/blob/master/exp16/utils/SRGAN_loss.jpg)
 
 content loss와 adversarial loss로 구성되어 있다. 
-SRGAN은 content loss 와 adversarial loss를 합하여 perceptual loss로 정의해 학습에 사용
-**adversirial loss**
+SRGAN은 content loss 와 adversarial loss를 합하여 perceptual loss로 정의해 학습에 사용  
+
+**adversirial loss**  
 일반적으로 알고 있는 GAN의 loss
 
-**content loss**
-![content loss]()
+**content loss**  
+![content loss](https://github.com/estela19/AIFFEL/blob/master/exp16/utils/content_loss.jpg)
 
 generator가 생성한 이미지와 실제 이미지를 비교하는 것이 아닌 **pretrained vgg** 모델에 입력하여 나오는 feature map의 차이를 계산  
 
