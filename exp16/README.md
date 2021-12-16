@@ -3,8 +3,7 @@ bicubic interpolation과 srgan을 활용하여 저해상도 이미지를 고해�
 
 [Go To Code](https://github.com/estela19/AIFFEL/blob/master/exp16/baselilne.ipynb)
 
-### Preview
-![result](https://github.com/estela19/AIFFEL/blob/master/exp16/utils/result.jpg)
+
 
 **super resolution**이란 저해상도 이미지를 고해상도로 변환하는 작업을 말한다.  
 super resolution에는 두가지 어려움이 잇는데, 
@@ -87,6 +86,18 @@ Super Resolution 결과를 평가하는 정량적인 척도
 	* 영상의 구조 정보를 고려하여 얼마나 구조 정보를 변화시키지 않았는지  
 	* SSIM값이 높을수록 원본 영상의 품질에 가깝다. 
 
+
+# Result
+![result](https://github.com/estela19/AIFFEL/blob/master/exp16/utils/result.jpg)
+
+* original image  
+![orig](https://github.com/estela19/AIFFEL/blob/master/exp16/images/fire_lr.gif)
+
+* SR by bicubic  
+![bicubic](https://github.com/estela19/AIFFEL/blob/master/exp16/images/bicubic.gif)  
+
+* SR by srgan  
+![srgan](https://github.com/estela19/AIFFEL/blob/master/exp16/images/srgan.gif)
 
 # Additional Study
 * RefSR (Reference-based Super Resolution)
